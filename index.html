@@ -1,1 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang Tian's Homepage</title>
+    <style>
+        /* 基本样式 (保持不变) */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h1, h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 { margin-top: 0; }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 25px;
+            object-fit: cover;
+            border: 3px solid #dee2e6;
+        }
+        .header-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .header-info .institution {
+            font-size: 1.0em;
+            color: #6c757d;
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        .links li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .publications-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .publications-list li {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid #007bff;
+        }
+        .publications-list strong {
+            display: block;
+            font-size: 1.15em;
+            color: #212529;
+            margin-bottom: 5px;
+        }
+        .publication-status {
+            font-style: italic;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .publication-summary {
+            margin-top: 8px;
+            font-size: 0.95em;
+            color: #495057;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #e9ecef;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <header class="header">
+            <!-- 建议替换成您的个人照片URL -->
+            <img src="https://via.placeholder.com/120" alt="Yang Tian's Profile Photo">
+            <div class="header-info">
+                <h1>Yang Tian (田烊)</h1>
+                <p>Ph.D. Candidate in Statistics</p>
+                <p class="institution">Zhejiang University</p>
+                <div class="links">
+                    <ul>
+                        <li><a href="mailto:tiany5@zju.edu.cn">[Email]</a></li>
+                        <li><a href="https://scholar.google.com/" target="_blank">[Google Scholar]</a></li>
+                        <li><a href="https://github.com/Tiany5" target="_blank">[GitHub]</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section id="news">
+            <h2>News</h2>
+            <ul>
+                <!-- 链接和日期已修正 -->
+                <li><b>[Sep 2025]</b> Our paper on conformalized multiple testing is now available on <a href="https://arxiv.org/abs/2509.04231" target="_blank">arXiv</a>.</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Ph.D. candidate in Statistics at Zhejiang University, advised by <a href="https://person.zju.edu.cn/en/sunwenguang" target="_blank">Prof. Wenguang Sun</a>. I started my Ph.D. journey in 2022.
+            </p>
+            <p>
+                My research is dedicated to building trustworthy and powerful statistical methods for modern data analysis where classical assumptions often fail. My current work addresses a fundamental challenge in **large-scale multiple testing**: the unreliability of theoretical null distributions. To tackle this, I have developed a new framework that integrates the robustness of **conformal inference** with the power of **empirical Bayes**. This approach uses self-calibrated data to provide provable **finite-sample FDR control** without relying on restrictive distributional assumptions, ensuring more credible and powerful inferences in complex scientific settings.
+            </p>
+             <p>
+                Beyond static testing problems, I am also deeply interested in developing methodologies for **sequential decision-making** and **online learning**, where data arrives in a stream and decisions must be made in real-time.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>My primary research interests include:</p>
+            <ul>
+                <li><b>Conformal Inference & Distribution-Free Methods:</b> Developing robust inference tools that provide valid statistical guarantees without strong distributional assumptions.</li>
+                <li><b>Empirical Bayes & Large-Scale Inference:</b> Leveraging data-driven techniques to enhance the power and reliability of multiple testing in high-dimensional problems.</li>
+                <li><b>Online Multiple Testing & Sequential Analysis:</b> Designing adaptive algorithms for error control in data streams and real-time decision-making scenarios.</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Preprints & Publications</h2>
+            <p>(* indicates equal contribution)</p>
+            <ul class="publications-list">
+                <li>
+                    <strong>Conformalized Multiple Testing under Unknown Null Distribution with Symmetric Errors</strong>
+                    Yang Tian, Wenguang Sun, et al. <br>
+                    <em>arXiv preprint arXiv:2509.04231</em><br>
+                    <div class="publication-summary">
+                        <b>Summary:</b> This paper proposes SENS, a conformalized empirical Bayes method for large-scale multiple testing. SENS provides finite-sample FDR control without assuming a specific null distribution, relaxing the common Gaussian assumption to a weaker symmetry condition. It combines the power of empirical Bayes with the robustness of conformal inference.
+                    </div>
+                    <a href="https://arxiv.org/abs/2509.04231" target="_blank">[arXiv]</a>
+                    <!-- <a href="#" target="_blank">[Code]</a> -->
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Yang Tian. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
